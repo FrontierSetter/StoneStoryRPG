@@ -1,0 +1,2 @@
+# StoneStoryRPG
+Script for StoneStoryRPG
