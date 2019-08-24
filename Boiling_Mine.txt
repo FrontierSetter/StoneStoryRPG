@@ -1,0 +1,37 @@
+//5远程 2破甲 7闪避 0回血
+
+//回血
+?foe.distance > 20
+    loadout 0
+//进攻
+?foe.distance < 7
+    loadout 2
+?foe.distance < 20 & foe.distance > 6
+    equipR Dashing_Shield
+    equipL Hammer
+?foe = bronze_guardian & foe.distance =   20
+  loadout 6
+?foe = bronze_guardian 
+ ^ & time > 945 & time < 1100 
+ loadout 7
+?foe = bronze_guardian 
+ ^ & time > 955 & time < 1100
+  equipR Dashing_Shield
+  equipL Hammer
+?foe = bronze_guardian
+ ^ & time > 1570 & time < 1700
+ loadout 7
+?foe = bronze_guardian
+ ^ & time > 1585 & time < 1700
+  equipR Dashing_Shield 
+  equipL Hammer
+?foe = bronze_guardian 
+ ^ & time > 2195 & time < 2300
+ loadout 7
+?foe = bronze_guardian
+ ^ & time > 2205 & time < 2300
+  equipR Dashing_Shield
+  equipL Hammer
+?foe = bronze_guardian & foe.distance < 15
+  loadout 2
+

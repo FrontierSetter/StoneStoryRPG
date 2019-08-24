@@ -1,0 +1,12 @@
+?foe.distance > 20
+ loadout 0
+?foe.distance < 20 & foe.distance > 6
+  loadout 4
+?foe.distance < 7
+ loadout 1
+?time > 3200 & foe = boss & foe.distance > 2
+ equip shovel
+//?time > 2850 & time < 3075
+// equip shovel
+//?time > 3800 & time < 4050
+// equip shovel

@@ -1,0 +1,13 @@
+// 意念之石是一件强大的圣遗物，以至于经常会在妄图使用它的人们手中失控。\m\m启动后，它可以
+// 持续性地执行给予它的指令。
+// 指令必须使用石之脚本来编写。
+// 你可以在 StoneStoryRPG.com/stonescript 找到相关指南。
+// ——贤者贝赛拉
+
+?hp < 10
+  activate potion
+loadout 1
+?loc = rocky
+  equip shovel
+?foe = poison
+  equipL crossbow
