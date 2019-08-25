@@ -1,0 +1,16 @@
+?foe.distance > 17
+ loadout 0
+?foe.distance < 18 & foe ! boss
+ loadout 2
+?foe.distance < 18 & foe = boss
+ loadout 1
+?time < 400
+ equipR hatchet
+?time > 1500
+ ?foe ! boss | foe.distance > 50
+  equipR hatchet
+
+//?foe = boss & foe.distance > 50
+// equipR hatchet
+//?foe = deadwood_tree
+// equipR hatchet
